@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; 
+  font-size: 16px;
+}
+
+/* NAV BAR */
+#nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 2.25rem;
+  padding: 2.5rem 2.5rem 0rem 2.5rem;  
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#svg-top-nav-logo {
+  width: auto;
+  height: 2.25rem;
+}
+
+#canvas-container {
+  position: absolute;
+  top: 0;    
+  left: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#icon-wrapper {
+  display: block;
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+#icon-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#icon-btn-default { visibility: visible; z-index: 2; }
+#icon-btn-quit   { visibility: hidden;  z-index: 1; }
+
+#info-popup {
+  display: none;            
+  position: absolute;
+   top: 6vw;
+  right: 4.5vw;
+  z-index: 20;              
+}
+
+#info-popup img {
+  display: block;
+}
+
+#sound-btn-container {
+  display: flex;
+   align-items: center;
+  justify-content: center;
+   position: fixed;
+  width: 2rem;
+  height: 2rem;
+   bottom: 3vw;
+  right: 3vw;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#sound-btn-default { display: block; z-index: 1000; }
+#sound-btn-on { display: none; z-index: 999; }
+
+
+
+
+
